@@ -9,6 +9,15 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        header {
+    background: linear-gradient(135deg, #002147, #003366); /* Vibrant orange-red gradient */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    border-radius: 0 0 20px 20px; /* Rounded bottom corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f8f9fa;
@@ -26,10 +35,11 @@
             font-weight: bold;
         }
         h2 {
-            color: #007BFF;
-            font-weight: bold;
-            margin-top: 20px;
-        }
+    color: #ca0303 !important; /* Dark orange */
+    font-weight: bold;
+    margin-top: 20px;
+}
+
         h3 {
             color: #2004f3;
             font-weight: bold;
@@ -45,7 +55,7 @@
     </style>
 </head>
 <body>
-    <header class="bg-primary bg-gradient text-white py-5">
+    <header>
         <div class="container text-center">
             <h1>ES114 Assignment 3 - Group J069</h1>
             <h2>Distributions in PyMC</h2>
@@ -53,7 +63,7 @@
     </header>
 
     <div class="container">
-        <h2>Introduction</h2>
+        <h1>Introduction</h1>
         <h3>Overview</h3>
         <p>PyMC is a powerful probabilistic programming library in Python, primarily used for Bayesian statistical modeling and inference. It provides an intuitive framework for defining and estimating complex probabilistic models using Markov Chain Monte Carlo (MCMC) and Variational Inference methods.</p>
         
@@ -72,7 +82,7 @@
     </script>
 
     <div class="container">
-        <h2>Working Code Examples</h2>
+        <h1>Working Code Examples</h1>
         <div id="includedContent"></div>
     </div>
     <script>
@@ -98,7 +108,7 @@
     </script>
 
     <div class="container">
-        <h2>Conclusion</h2>
+        <h1>Conclusion</h1>
         <p>PyMC provides a comprehensive framework for probabilistic programming and Bayesian inference. By leveraging its rich collection of distributions, users can model uncertainties in real-world applications, from finance and healthcare to marketing and environmental science. The ability to define priors, model latent variables, and perform inference using efficient sampling methods makes PyMC an essential tool for statistical analysis.</p>
         <p>Through the examples and discussions provided, we have explored how different distributions like Normal, Poisson, Exponential, and Gamma can be effectively used in PyMC. These distributions form the foundation of probabilistic modeling, enabling users to make informed decisions based on data-driven insights.</p>
     </div>
@@ -108,5 +118,3 @@
     </footer>
 </body>
 </html>
-
-
