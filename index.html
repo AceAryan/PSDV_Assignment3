@@ -3,92 +3,105 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>ES114 J069 Assignment 3</title>
+    <meta name="description" content="A blog on Distributions in PyMC for ES114 Assignment 3" />
+    <meta name="author" content="Group J069" />
+    <title>ES114 J069 Assignment 3 - Distributions in PyMC</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Core theme CSS (includes Bootstrap) -->
     <link href="css/styles.css" rel="stylesheet" />
     
     <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
         .highlight {
-            color: #007BFF; /* A shade of blue for better visibility */
+            color: #007BFF;
             font-weight: bold;
-            font-size: 1.2em; /* Slightly bigger font size */
+            font-size: 1.2em;
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+            font-weight: bold;
+            text-align: center;
+        }
+        section {
+            padding: 50px 0;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
         }
     </style>
 </head>
 
 <body id="page-top">
     <!-- Header -->
-    <header class="bg-primary bg-gradient text-white">
-        <div class="container px-4 text-center">
-            <h1 class="fw-bolder">ES114 Assignment 3 Blog - Group J069<br>Topic: Distributions in PyMC</h1>
+    <header class="bg-primary bg-gradient text-white py-5">
+        <div class="container text-center">
+            <h1 class="fw-bolder">ES114 Assignment 3 - Group J069</h1>
+            <h2>Distributions in PyMC</h2>
         </div>
     </header>
 
     <!-- Introduction Section -->
     <section id="about">
         <div class="container px-4">
-            <div class="row gx-4 justify-content-center">
-                <div class="col-lg-8">
-                    <h1>Introduction</h1>
-                    <ul>
-                        <li class="highlight">Overview</li>
-                    </ul>
-                    <p>PyMC is a powerful probabilistic programming library in Python, primarily used for Bayesian statistical modeling and inference. 
-                        It provides an intuitive framework for defining and estimating complex probabilistic models using Markov Chain Monte Carlo (MCMC) 
-                        and Variational Inference methods. One of the key components of PyMC is its extensive support for probability distributions, 
-                        which serve as the foundation for defining stochastic variables in Bayesian models.</p>
-                    <ul>
-                        <li class="highlight">Purpose of Distributions in PyMC</li>
-                    </ul>
-                    <p>Distributions in PyMC allow users to model uncertainty and incorporate prior knowledge into probabilistic models. These distributions 
-                        can represent observed data, latent variables, or priors in a Bayesian framework. PyMC provides a wide range of continuous and discrete 
-                        distributions, including Normal, Beta, Gamma, Poisson, and Bernoulli, among others. By leveraging these distributions, users can construct 
-                        hierarchical models, perform Bayesian inference, and generate predictive samples.</p>
-                </div>
-            </div>
+            <h1>Introduction</h1>
+            <ul>
+                <li class="highlight">Overview</li>
+            </ul>
+            <p>PyMC is a powerful probabilistic programming library in Python, primarily used for Bayesian statistical modeling and inference. 
+                It provides an intuitive framework for defining and estimating complex probabilistic models using Markov Chain Monte Carlo (MCMC) 
+                and Variational Inference methods.</p>
+            <ul>
+                <li class="highlight">Purpose of Distributions in PyMC</li>
+            </ul>
+            <p>Distributions in PyMC allow users to model uncertainty and incorporate prior knowledge into probabilistic models. These distributions 
+                can represent observed data, latent variables, or priors in a Bayesian framework.</p>
         </div>
     </section>
+
     <!-- Key Features -->
     <div id="pymcDistributions"></div>
 
-<script>
-    fetch('key_features.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('pymcDistributions').innerHTML = data;
-        })
-        .catch(error => console.error("Error loading PyMC distributions file:", error));
-</script>
+    <script>
+        fetch('key_features.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('pymcDistributions').innerHTML = data;
+            })
+            .catch(error => console.error("Error loading PyMC distributions file:", error));
+    </script>
 
-
-    <!-- Code Examples Section> -->
-    <!-- Embedded Local HTML File -->
+    <!-- Code Examples Section -->
     <section id="embedded-file">
         <div class="container px-4">
-            <div class="row gx-4 justify-content-center">
-                <div class="col-lg-8">
-                    <h1>Embedded Local Code Examples</h1>
-                    <div id="includedContent"></div>
-                </div>
-            </div>
+            <h1>Working Code Examples</h1>
+            <div id="includedContent"></div>
         </div>
     </section>
 
     <script>
-        // Make sure you are running a local server for this to work
-        fetch('pymc1.html')
+        fetch('pymc3.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('includedContent').innerHTML = data;
             })
             .catch(error => console.log("Error loading the file: ", error));
     </script>
-    <!-- Practical Applications section -->
-    <div id="pymcApplications"></div>
 
+    <!-- Practical Applications Section -->
+    <div id="pymcApplications"></div>
     <script>
         fetch('practical_applications.html')
             .then(response => response.text())
@@ -97,25 +110,26 @@
             })
             .catch(error => console.error("Error loading PyMC applications file:", error));
     </script>
-    
+
+    <!-- Conclusion Section -->
+    <section id="conclusion">
+        <div class="container px-4">
+            <h1>Conclusion</h1>
+            <p>PyMC provides a comprehensive framework for probabilistic programming and Bayesian inference. By leveraging its rich collection of distributions, users can model uncertainties in real-world applications.</p>
+        </div>
+    </section>
 
     <!-- References Section -->
     <section id="references">
         <div class="container px-4">
-            <div class="row gx-4 justify-content-center">
-                <div class="col-lg-8">
-                    <h1>References</h1>
-                    <p class="lead"><a href="https://www.pymc.io/projects/docs/en/stable/api/distributions.html">PyMC Documentation</a></p>
-                </div>
-            </div>
+            <h1>References</h1>
+            <p class="lead"><a href="https://www.pymc.io/projects/docs/en/stable/api/distributions.html">PyMC Documentation</a></p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
-        <div class="container px-4">
-            <p class="m-0 text-center text-white">Copyright &copy; ES114 Group J069 2025</p>
-        </div>
+    <footer>
+        <p>Copyright &copy; ES114 Group J069 2025</p>
     </footer>
 
     <!-- Bootstrap core JS -->
@@ -124,4 +138,5 @@
     <script src="js/scripts.js"></script>
 </body>
 </html>
+
 
