@@ -1,58 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>ES114 J069 Assignment 3</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Header-->
-        <header class="bg-primary bg-gradient text-white">
-            <div class="container px-4 text-center">
-                <h1 class="fw-bolder">ES114 Assignment 3 Blog - Group J069<br>Topic: Distributions in PyMC</h1>
-            </div>
-        </header>
-        <!-- About section-->
-        <section id="about">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h1>Introduction</h1>
-                        <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
-                        <ul>
-                            <li>Clickable nav links that smooth scroll to page sections</li>
-                            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-                            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-                            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-                        </ul>
-                    </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>ES114 J069 Assignment 3</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .highlight {
+            color: #007BFF; /* A shade of blue for better visibility */
+            font-weight: bold;
+            font-size: 1.2em; /* Slightly bigger font size */
+        }
+    </style>
+</head>
+<body id="page-top">
+    <!-- Header-->
+    <header class="bg-primary bg-gradient text-white">
+        <div class="container px-4 text-center">
+            <h1 class="fw-bolder">ES114 Assignment 3 Blog - Group J069<br>Topic: Distributions in PyMC</h1>
+        </div>
+    </header>
+    <!-- Introduction section-->
+    <section id="about">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h1>Introduction</h1>
+                    <ul>
+                        <li class="highlight">Overview</li>
+                    </ul>
+                    <p>PyMC is a powerful probabilistic programming library in Python, primarily used for Bayesian statistical modeling and inference. 
+                        It provides an intuitive framework for defining and estimating complex probabilistic models using Markov Chain Monte Carlo (MCMC) 
+                        and Variational Inference methods. One of the key components of PyMC is its extensive support for probability distributions, 
+                        which serve as the foundation for defining stochastic variables in Bayesian models.</p>
+                    <ul>
+                        <li class="highlight">Purpose of Distributions in PyMC</li>
+                    </ul>
+                    <p>Distributions in PyMC allow users to model uncertainty and incorporate prior knowledge into probabilistic models. These distributions 
+                        can represent observed data, latent variables, or priors in a Bayesian framework. PyMC provides a wide range of continuous and discrete 
+                        distributions, including Normal, Beta, Gamma, Poisson, and Bernoulli, among others. By leveraging these distributions, users can construct 
+                        hierarchical models, perform Bayesian inference, and generate predictive samples.</p>
                 </div>
             </div>
-        </section>
-        <!-- References section-->
-        <section id="references">
-            <div class="container px-4">
-                <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <h1>References</h1>
-                        <p class="lead"><a href="https://www.pymc.io/projects/docs/en/stable/api/distributions.html">PyMC Documentation</a>
-                        </p>
-                    </div>
+        </div>
+    </section>
+    <!-- References section-->
+    <section id="references">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h1>References</h1>
+                    <p class="lead"><a href="https://www.pymc.io/projects/docs/en/stable/api/distributions.html">PyMC Documentation</a>
+                    </p>
                 </div>
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; ES114 Group J069 2025</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container px-4"><p class="m-0 text-center text-white">Copyright &copy; ES114 Group J069 2025</p></div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
 </html>
