@@ -71,6 +71,28 @@
         <p>Distributions in PyMC allow users to model uncertainty and incorporate prior knowledge into probabilistic models. These distributions can represent observed data, latent variables, or priors in a Bayesian framework.</p>
     </div>
 
+    <div id="contentContainer"></div> <!-- The div where the fetched content will be inserted -->
+
+<script>
+    function loadHTML(installation, elementId) {
+        fetch("installation.html")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Error loading " + filename);
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById(elementId).innerHTML = data;
+            })
+            .catch(error => console.error(error));
+    }
+
+    // Example usage
+    loadHTML('references.html', 'contentContainer'); // Fetches references.html and inserts it into #contentContainer
+</script>
+
+
     <div id="pymcDistributions" class="container"></div>
     <script>
         fetch('key_features.html')
@@ -112,6 +134,13 @@
         <p>PyMC provides a comprehensive framework for probabilistic programming and Bayesian inference. By leveraging its rich collection of distributions, users can model uncertainties in real-world applications, from finance and healthcare to marketing and environmental science. The ability to define priors, model latent variables, and perform inference using efficient sampling methods makes PyMC an essential tool for statistical analysis.</p>
         <p>Through the examples and discussions provided, we have explored how different distributions like Normal, Poisson, Exponential, and Gamma can be effectively used in PyMC. These distributions form the foundation of probabilistic modeling, enabling users to make informed decisions based on data-driven insights.</p>
     </div>
+    <div class="container">
+        <h1>References</h1>
+        <ul>
+            <li><a href="https://www.pymc.io/" target="_blank">PyMC Official Documentation</a></li>
+        </ul>
+    </div>
+    
 
     <footer>
         <p>&copy; ES114 Group J069 2025</p>
